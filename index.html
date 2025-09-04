@@ -1,804 +1,883 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PSR-I500 Tones — Premium .USR Pack</title>
-  <meta name="description" content="Premium Yamaha PSR-I500 custom tones — plug & play .USR pack for worship and live performance. Instant secure download.">
-  <meta name="keywords" content="Yamaha PSR I500 tones, i500 usr file, worship tones, Yamaha keyboard tones download" />
-  <meta name="author" content="PSR-I500 Tones" />
-  <!-- Add modern favicon if available -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
-  <script src="https://fpyf8.com/88/tag.min.js" data-zone="168492" async data-cfasync="false"></script>
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<style>
-/* Core Variables and Reset */
-:root {
-  --dark-navy: #19293C;
-  --secondary-accent: #6C7D91;
-  --dark-gray: #333333;
-  --white: #FFFFFF;
-  --off-white: #F8F8F8;
-  --black: #000000;
-  --radius: 12px;
-  --ease: cubic-bezier(0.22, 0.9, 0.36, 1);
-  --shadow-subtle: rgba(0, 0, 0, 0.08);
-  --shadow-mid: rgba(0, 0, 0, 0.15);
-  --btn-orange: #F37D1A;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  background-color: var(--off-white);
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  color: var(--dark-gray);
-  scroll-behavior: smooth;
-  background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n" x="0" y="0"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100" height="100" fill="gray" filter="url(%23n)" opacity="0.1"/%3E%3C/svg%3E');
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0px 24px;
-}
-
-.container-2 {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 24px 24px;
-  background-color: #333333;
-  border-radius: 12px;
-}
-/* Header */
-.header {
-  position: fixed; top: 0; left: 0; right: 0;
-  background: var(--white);
-  border-bottom: 1px solid var(--off-white);
-  display: flex; justify-content: space-between; align-items: center;
-  height: 72px; padding: 0 24px; z-index: 200;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-.brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--dark-navy);
-}
-nav.navlinks {
-  display: flex; gap: 28px;
-}
-nav a.navlink {
-  font-weight: 600; font-size: 15px;
-  color: var(--secondary-accent);
-  padding: 10px 16px;
-  border-radius: var(--radius);
-  transition: color 0.3s var(--ease), background-color 0.3s var(--ease);
-}
-nav a.navlink:hover,
-nav a.navlink:focus {
-  color: var(--dark-navy);
-  background-color: rgba(25, 41, 60, 0.05);
-  outline: none;
-}
-/* Hero */
-.hero-banner {
-    width: 100%;
-    height: 600px;
-    background-image: url('cover.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 72px;
-}
-.hero-banner:hover {
-    filter: blur(0);
-    -webkit-filter: blur(0);
-}
-.hero-product-info {
-    padding: 40px 24px;
-    background-color: var(--white);
-    border-bottom: 1px solid var(--off-white);
-}
-.hero-product-info .product-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--dark-navy);
-    margin: 0;
-}
-.hero-product-info .product-description {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--dark-gray);
-}
-.product-info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-.product-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-.product-image {
-    width: 100%;
-    border-radius: var(--radius);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-.product-details-container {
-    display: flex;
-    flex-direction: column;
-}
-.pricing-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.pricing-block .price {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--dark-navy);
-    margin-bottom: 10px;
-}
-.btn {
-  cursor: pointer;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 17px 36px;
-  border-radius: var(--radius);
-  border: 2px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 170px;
-  transition: all 0.25s var(--ease);
-  user-select: none;
-}
-.btn-orange {
-    background-color: var(--btn-orange);
-    color: var(--white);
-    box-shadow: 0 6px 22px rgba(243, 125, 26, 0.4);
-    border-color: var(--btn-orange);
-}
-.btn-orange:hover, .btn-orange:focus {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 48px rgba(243, 125, 26, 0.6);
-    outline: none;
-}
-.btn-white {
-    background-color: var(--white);
-    color: var(--dark-navy);
-    border: 1px solid var(--secondary-accent);
-}
-.btn-white:hover, .btn-white:focus {
-    background-color: var(--off-white);
-    outline: none;
-}
-/* Features */
-section {
-  padding: 100px 20px;
-}
-section + section {
-  border-top: 1px solid var(--off-white);
-}
-.center {
-  text-align: center;
-}
-h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 38px;
-  margin-bottom: 28px;
-  letter-spacing: -0.3px;
-  color: var(--dark-navy);
-}
-#features p {
-  max-width: 720px;
-  margin: 0 auto 56px auto;
-  font-size: 16.5px;
-  color: var(--dark-gray);
-}
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 48px 32px;
-  max-width: 980px;
-  margin: 0 auto;
-}
-.feature {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 32px 30px;
-  box-shadow: 0 8px 24px var(--shadow-subtle);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 45px var(--shadow-mid);
-}
-.feature .icon {
-  width: 52px; height: 52px;
-  background: var(--dark-navy);
-  border-radius: 22px;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 8px 24px var(--shadow-subtle);
-}
-.feature svg {
-  stroke-width: 2.5;
-  stroke: var(--white);
-}
-.feature h4 {
-  font-size: 22px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--dark-navy);
-  font-family: 'Cormorant Garamond', serif;
-}
-.feature p {
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--secondary-accent);
-  margin: 0;
-}
-/* Audio Section */
-.audio-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-.audio-grid {
-    background-image: url('ar4.jpg');
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 980px;
-    margin: 40px auto;
-    padding: 90px; /* Add padding to contain the background */
-    background-size: cover;
-    background-position: center;
-    border-radius: var(--radius);
-    box-shadow: 0 18px 58px var(--shadow-subtle);
-}
-.audio-item {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5px);
-    border-radius: var(--radius);
-    padding: 20px;
-    box-shadow: 0 8px 24px var(--shadow-subtle);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.audio-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px var(--shadow-mid);
-}
-.audio-item h4 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--dark-navy);
-}
-.audio-item audio {
-    width: 100%;
-}
-.audio-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px var(--shadow-mid);
-}
-.audio-item h4 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--dark-navy);
-}
-.audio-item audio {
-    width: 100%;
-}
-/* Pricing */
-#buy p {
-  max-width: 720px;
-  margin: 12px auto 56px auto;
-  font-size: 17px;
-  color: var(--dark-gray);
-}
-.buy-section-cta {
-  margin-top: 30px;
-  display: inline-block;
-}
-.pricing {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-.price-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 50px 44px 48px 44px;
-  box-shadow: 0 18px 50px var(--shadow-subtle);
-  max-width: 380px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-.price-card:hover {
-  box-shadow: 0 26px 70px var(--shadow-mid);
-}
-.price {
-  font-weight: 700;
-  font-size: 54px;
-  color: var(--dark-navy);
-  margin-bottom: 12px;
-  letter-spacing: -0.5px;
-  font-family: 'Cormorant Garamond', serif;
-}
-.price-note {
-  font-size: 15.5px;
-  color: var(--secondary-accent);
-  font-weight: 600;
-  margin-bottom: 36px;
-}
-.buy-details {
-  text-align: left;
-  margin: 20px 0;
-}
-.buy-details h4 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--dark-navy);
-  margin-bottom: 8px;
-}
-.included-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.included-list li {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--dark-gray);
-}
-.included-list li::before {
-  content: "✓ ";
-  color: var(--dark-navy);
-  font-weight: 700;
-  margin-right: 5px;
-}
-.buy-btn a {
-  background: var(--dark-navy);
-  color: var(--white);
-  font-weight: 700;
-  font-size: 18px;
-  padding: 18px 40px;
-  border-radius: var(--radius);
-  text-transform: uppercase;
-  box-shadow: 0 0 25px var(--shadow-subtle);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  border: none;
-  min-width: 200px;
-  display: inline-block;
-  font-family: 'Cormorant Garamond', serif;
-}
-.buy-btn a:hover {
-  background: var(--secondary-accent);
-  box-shadow: 0 0 45px var(--shadow-mid);
-  transform: translateY(-2px);
-  outline: none;
-}
-.trust-text {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--secondary-accent);
-  user-select: none;
-  margin-top: 12px;
-}
-.video-wrapper {
-  max-width: 740px;
-  margin: 40px auto 0 auto;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 18px 58px var(--shadow-subtle);
-}
-.video-heading {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--dark-navy);
-  margin-bottom: 5px;
-}
-.video-subheading {
-  font-size: 16px;
-  color: var(--dark-gray);
-  margin-bottom: 20px;
-}
-iframe {
-  width: 100%;
-  height: 440px;
-  border: none;
-  display: block;
-}
-/* FAQ */
-.faq {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 26px;
-}
-details.faq-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 28px 32px;
-  box-shadow: 0 14px 54px var(--shadow-subtle);
-  color: var(--dark-gray);
-  font-size: 17px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-details.faq-card[open] {
-  background-color: var(--dark-navy);
-  box-shadow: 0 18px 62px var(--shadow-mid);
-  color: var(--white);
-}
-details summary {
-  font-weight: 700;
-  font-size: 20px;
-  user-select: none;
-  outline: none;
-  color: var(--dark-navy);
-  font-family: 'Cormorant Garamond', serif;
-}
-details[open] summary {
-  color: var(--white);
-}
-details summary::-webkit-details-marker {
-  display: none;
-}
-details p {
-  margin-top: 20px;
-  color: inherit;
-  line-height: 1.6;
-}
-/* Footer */
-.footer {
-  background: var(--dark-navy);
-  padding: 56px 24px 60px 24px;
-  text-align: center;
-  color: var(--secondary-accent);
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-}
-.brand-footer {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: var(--white);
-  user-select: none;
-  margin-bottom: 6px;
-}
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-}
-.footer-nav a {
-    color: var(--white);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-.footer-nav a:hover {
-    color: var(--secondary-accent);
-}
-/* Responsive */
-@media (max-width: 1024px) {
-  .hero-banner {
-    height: 400px;
-  }
-  nav.navlinks {
-    display: none;
-  }
-  .title {
-    font-size: 44px;
-  }
-}
-@media (max-width: 640px) {
-  .product-info-grid {
-      grid-template-columns: 1fr;
-  }
-  .pricing-block {
-      align-items: center;
-  }
-  .cta-row {
-    flex-direction: column;
-  }
-  .cta-row .btn {
-    width: 100%;
-    min-width: unset;
-  }
-  .buy-btn a {
-    min-width: 100%;
-    padding: 18px 0;
-  }
-  .price-card {
-    width: 100%;
-    max-width: none;
-  }
-}
-</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PSR-I500 Tones — Premium .USR Pack</title>
+    <meta name="description" content="Premium Yamaha PSR-I500 custom tones — plug & play .USR pack for worship and live performance. Instant secure download.">
+    <meta name="keywords" content="Yamaha PSR I500 tones, i500 usr file, worship tones, Yamaha keyboard tones download" />
+    <meta name="author" content="PSR-I500 Tones" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <script src="https://fpyf8.com/88/tag.min.js" data-zone="168492" async data-cfasync="false"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        /* Core Variables and Reset */
+        :root {
+            --dark-navy: #19293C;
+            --secondary-accent: #6C7D91;
+            --dark-gray: #333333;
+            --white: #FFFFFF;
+            --off-white: #F8F8F8;
+            --black: #000000;
+            --radius: 12px;
+            --ease: cubic-bezier(0.22, 0.9, 0.36, 1);
+            --shadow-subtle: rgba(0, 0, 0, 0.08);
+            --shadow-mid: rgba(0, 0, 0, 0.15);
+            --btn-orange: #F37D1A;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: var(--off-white);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+            background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n" x="0" y="0"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100" height="100" fill="gray" filter="url(%23n)" opacity="0.1"/%3E%3C/svg%3E');
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0px 24px;
+        }
+        .container-2 {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 24px 24px;
+            background-color: #333333;
+            border-radius: 12px;
+        }
+        /* Header */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--off-white);
+            display: flex; justify-content: space-between; align-items: center;
+            height: 72px; padding: 0 24px; z-index: 200;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--dark-navy);
+        }
+        nav.navlinks {
+            display: flex; gap: 28px;
+        }
+        nav a.navlink {
+            font-weight: 600; font-size: 15px;
+            color: var(--secondary-accent);
+            padding: 10px 16px;
+            border-radius: var(--radius);
+            transition: color 0.3s var(--ease), background-color 0.3s var(--ease);
+        }
+        nav a.navlink:hover,
+        nav a.navlink:focus {
+            color: var(--dark-navy);
+            background-color: rgba(25, 41, 60, 0.05);
+            outline: none;
+        }
+        /* Countdown Banner */
+        #countdown-banner {
+            text-align: center;
+            background-color: var(--btn-orange);
+            color: var(--white);
+            padding: 8px 0;
+            font-weight: 600;
+            font-size: 14px;
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            z-index: 150;
+        }
+        /* Hero */
+        .hero-banner {
+            width: 100%;
+            height: 600px;
+            background-image: url('cover.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: 72px;
+        }
+        .hero-product-info {
+            padding: 40px 24px;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--off-white);
+        }
+        .hero-product-info .product-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: var(--dark-navy);
+            margin: 0;
+        }
+        .hero-product-info .product-description {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        .product-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        .product-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .product-details-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .pricing-block .price {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin-bottom: 10px;
+        }
+        .btn {
+            cursor: pointer;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 17px;
+            padding: 17px 36px;
+            border-radius: var(--radius);
+            border: 2px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 170px;
+            transition: all 0.25s var(--ease);
+            user-select: none;
+        }
+        .btn-orange {
+            background-color: var(--btn-orange);
+            color: var(--white);
+            box-shadow: 0 6px 22px rgba(243, 125, 26, 0.4);
+            border-color: var(--btn-orange);
+        }
+        .btn-orange:hover, .btn-orange:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 48px rgba(243, 125, 26, 0.6);
+            outline: none;
+        }
+        .btn-white {
+            background-color: var(--white);
+            color: var(--dark-navy);
+            border: 1px solid var(--secondary-accent);
+        }
+        .btn-white:hover, .btn-white:focus {
+            background-color: var(--off-white);
+            outline: none;
+        }
+        /* Sections */
+        section {
+            padding: 100px 20px;
+        }
+        section + section {
+            border-top: 1px solid var(--off-white);
+        }
+        .center {
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 38px;
+            margin-bottom: 28px;
+            letter-spacing: -0.3px;
+            color: var(--dark-navy);
+        }
+        #features p {
+            max-width: 720px;
+            margin: 0 auto 56px auto;
+            font-size: 16.5px;
+            color: var(--dark-gray);
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px 32px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .feature {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px 30px;
+            box-shadow: 0 8px 24px var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 45px var(--shadow-mid);
+        }
+        .feature .icon {
+            width: 52px; height: 52px;
+            background: var(--dark-navy);
+            border-radius: 22px;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 8px 24px var(--shadow-subtle);
+        }
+        .feature svg {
+            stroke-width: 2.5;
+            stroke: var(--white);
+        }
+        .feature h4 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: 700;
+            color: var(--dark-navy);
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .feature p {
+            font-size: 16px;
+            line-height: 1.55;
+            color: var(--secondary-accent);
+            margin: 0;
+        }
+        /* Audio Section */
+        .audio-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .audio-grid {
+            background-image: url('ar4.jpg');
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 980px;
+            margin: 40px auto;
+            padding: 90px;
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--radius);
+            box-shadow: 0 18px 58px var(--shadow-subtle);
+        }
+        .audio-item {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: 0 8px 24px var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .audio-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px var(--shadow-mid);
+        }
+        .audio-item h4 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--dark-navy);
+        }
+        .audio-item audio {
+            width: 100%;
+        }
+        /* Pricing */
+        #buy p {
+            max-width: 720px;
+            margin: 12px auto 56px auto;
+            font-size: 17px;
+            color: var(--dark-gray);
+        }
+        .buy-section-cta {
+            margin-top: 30px;
+            display: inline-block;
+        }
+        .pricing {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .price-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px 44px 48px 44px;
+            box-shadow: 0 18px 50px var(--shadow-subtle);
+            max-width: 380px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .price-card:hover {
+            box-shadow: 0 26px 70px var(--shadow-mid);
+        }
+        .price {
+            font-weight: 700;
+            font-size: 54px;
+            color: var(--dark-navy);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .price-note {
+            font-size: 15.5px;
+            color: var(--secondary-accent);
+            font-weight: 600;
+            margin-bottom: 36px;
+        }
+        .buy-details {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .buy-details h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--dark-navy);
+            margin-bottom: 8px;
+        }
+        .included-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .included-list li {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        .included-list li::before {
+            content: "✓ ";
+            color: var(--dark-navy);
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        .buy-btn a {
+            background: var(--dark-navy);
+            color: var(--white);
+            font-weight: 700;
+            font-size: 18px;
+            padding: 18px 40px;
+            border-radius: var(--radius);
+            text-transform: uppercase;
+            box-shadow: 0 0 25px var(--shadow-subtle);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            border: none;
+            min-width: 200px;
+            display: inline-block;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .buy-btn a:hover {
+            background: var(--secondary-accent);
+            box-shadow: 0 0 45px var(--shadow-mid);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .trust-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--secondary-accent);
+            user-select: none;
+            margin-top: 12px;
+        }
+        .video-wrapper {
+            max-width: 740px;
+            margin: 40px auto 0 auto;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 18px 58px var(--shadow-subtle);
+        }
+        .video-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--dark-navy);
+            margin-bottom: 5px;
+        }
+        .video-subheading {
+            font-size: 16px;
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 440px;
+            border: none;
+            display: block;
+        }
+        /* FAQ */
+        .faq {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 26px;
+        }
+        details.faq-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+            box-shadow: 0 14px 54px var(--shadow-subtle);
+            color: var(--dark-gray);
+            font-size: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        details.faq-card[open] {
+            background-color: var(--dark-navy);
+            box-shadow: 0 18px 62px var(--shadow-mid);
+            color: var(--white);
+        }
+        details summary {
+            font-weight: 700;
+            font-size: 20px;
+            user-select: none;
+            outline: none;
+            color: var(--dark-navy);
+            font-family: 'Cormorant Garamond', serif;
+        }
+        details[open] summary {
+            color: var(--white);
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details p {
+            margin-top: 20px;
+            color: inherit;
+            line-height: 1.6;
+        }
+        /* Footer */
+        .footer {
+            background: var(--dark-navy);
+            padding: 56px 24px 60px 24px;
+            text-align: center;
+            color: var(--secondary-accent);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        .brand-footer {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--white);
+            user-select: none;
+            margin-bottom: 6px;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .footer-nav a {
+            color: var(--white);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .footer-nav a:hover {
+            color: var(--secondary-accent);
+        }
+        /* Community Showcase */
+        .video-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: 0 8px 24px var(--shadow-subtle);
+            overflow: hidden;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 45px var(--shadow-mid);
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+        }
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-banner {
+                height: 400px;
+            }
+            nav.navlinks {
+                display: none;
+            }
+            .title {
+                font-size: 44px;
+            }
+        }
+        @media (max-width: 768px) {
+            .audio-grid {
+                padding: 30px;
+                background-image: none;
+                background-color: var(--dark-gray);
+            }
+        }
+        @media (max-width: 640px) {
+            .product-info-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-block {
+                align-items: center;
+            }
+            .cta-row {
+                flex-direction: column;
+            }
+            .cta-row .btn {
+                width: 100%;
+                min-width: unset;
+            }
+            .buy-btn a {
+                min-width: 100%;
+                padding: 18px 0;
+            }
+            .price-card {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        @media (max-width: 480px) {
+            .audio-grid {
+                gap: 15px;
+                padding: 20px;
+            }
+            .audio-item h4 {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="header">
-  <a href="#" class="brand">YAMAHA Tones</a>
-  <nav class="navlinks">
-    <a href="#features" class="navlink">Why Buy</a>
-    <a href="#audio-previews" class="navlink">Audio Previews</a>
-    <a href="#buy" class="navlink">Get the Pack</a>
-    <a href="#faq" class="navlink">FAQ</a>
-    <a href="#contact" class="navlink">Contact</a>
-  </nav>
+    <a href="#" class="brand">YAMAHA Tones</a>
+    <nav class="navlinks">
+        <a href="#features" class="navlink">Why Buy</a>
+        <a href="#audio-previews" class="navlink">Audio Previews</a>
+        <a href="#buy" class="navlink">Get the Pack</a>
+        <a href="#faq" class="navlink">FAQ</a>
+        <a href="#contact" class="navlink">Contact</a>
+    </nav>
 </header>
+<div id="countdown-banner" style="display:none; text-align:center; background-color:#F37D1A; color:white; padding:8px 0; font-weight:600; font-size:14px; position:fixed; top:72px; left:0; right:0; z-index:150;">
+    Limited Time Offer! Price expires in: <span id="countdown-timer"></span>
+</div>
 <main>
-<section class="hero-banner">
-  <!-- Replace with your actual cover image -->
-</section>
-<section class="hero-product-info">
-  <div class="container">
-    <h1 class="product-name">Yamaha PSR-I500 Custom Tones</h1>
-    <p class="product-description">Unlock the full potential of your Yamaha PSR-I500 with our premium .USR tone pack. Crafted for music lovers and professional musicians alike, this pack provides a definitive collection of high-quality Indian instruments and performance-ready sounds.</p>
-    <div class="product-info-grid">
-      <div class="product-image-container">
-        <!-- REPLACE with your product shot -->
-        <img class="product-image" src="ar5.png" alt="PSR-I500 Custom Tones product image" />
-      </div>
-      <div class="product-details-container">
-        <div class="pricing-block">
-          <p class="price">₹499.00<br><del style="font-size: 60%;">₹3499.00</del></p>
-          <!-- Buy Now triggers Razorpay Checkout -->
-          <button class="btn btn-orange" id="rzp-buy-btn">Buy Now</button>
-          <a href="https://via.placeholder.com/600x400.png?text=Product+Registration" class="btn btn-white" style="margin-top:10px;">Product Registration</a>
-          <div class="trust-text">
-            <span>🔒 Secure Razorpay Checkout &bull; ⚡ Instant Download</span>
-          </div>
-          <!-- Trust icons (sample, replace with actual SVG or images if needed) -->
-          <div style="margin-top:8px;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lock-green.svg" alt="Secure Checkout" style="height:20px;vertical-align:middle;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Payment_method_Visa.svg" alt="VISA" style="height:20px;vertical-align:middle;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.svg" alt="Mastercard" style="height:20px;vertical-align:middle;">
-          </div>
+    <section class="hero-banner">
+        </section>
+    <section class="hero-product-info">
+        <div class="container">
+            <h1 class="product-name">Yamaha PSR-I500 Custom Tones</h1>
+            <p class="product-description">Unlock the full potential of your Yamaha PSR-I500 with our premium .USR tone pack. Crafted for music lovers and professional musicians alike, this pack provides a definitive collection of high-quality Indian instruments and performance-ready sounds.</p>
+            <div class="product-info-grid">
+                <div class="product-image-container">
+                    <img class="product-image" src="ar5.png" alt="PSR-I500 Custom Tones product image" />
+                </div>
+                <div class="product-details-container">
+                    <div class="pricing-block">
+                        <p class="price">₹499.00<br><del style="font-size: 60%;">₹3499.00</del></p>
+                        <button class="btn btn-orange" id="rzp-buy-btn">Buy Now</button>
+                        <a href="https://via.placeholder.com/600x400.png?text=Product+Registration" class="btn btn-white" style="margin-top:10px;">Product Registration</a>
+                        <div class="trust-text">
+                            <span>🔒 Secure Razorpay Checkout &bull; ⚡ Instant Download</span>
+                        </div>
+                        <div style="margin-top:8px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lock-green.svg" alt="Secure Checkout" style="height:20px;vertical-align:middle;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Payment_method_Visa.svg" alt="VISA" style="height:20px;vertical-align:middle;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.svg" alt="Mastercard" style="height:20px;vertical-align:middle;">
+                        </div>
+                    </div>
+                    <ul class="details-list" style="list-style:none; padding: 20px 0; margin: 0; text-align: left;">
+                        <li>Experience instant workflow with our plug-and-play file, eliminating the need for extensive tweaking.</li>
+                        <li>From authentic sitar and flute tones to warm, ethereal pads, this collection is designed</li>
+                        <li>to elevate your sound and inspire your creativity.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <ul class="details-list" style="list-style:none; padding: 20px 0; margin: 0; text-align: left;">
-          <li>Experience instant workflow with our plug-and-play file, eliminating the need for extensive tweaking.</li>
-          <li>From authentic sitar and flute tones to warm, ethereal pads, this collection is designed</li>
-          <li>to elevate your sound and inspire your creativity.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- Hidden Thank-You Section -->
-  <div id="thank-you-block" style="display:none;max-width:500px;margin:32px auto 0 auto;background:#fff;border-radius:12px;padding:32px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
-    <h2>Thank You!</h2>
-    <p>Your payment was successful. Your download is ready below.</p>
-    <!-- REPLACE DOWNLOAD_FILE_URL -->
-    <a href="DOWNLOAD_FILE_URL" class="btn btn-orange" download>Download Pack</a>
-    <div style="font-size:12px;color:#888;margin-top:10px;">If your download doesn't start, please contact <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</div>
-  </div>
-</section>
-<section id="audio-previews" class="audio-section">
-  <div class="container-2">
-    <h2 style="color: white;">Audio Previews</h2>
-    <p style="color: white;">Listen to selections from the actual pack.</p>
-    <div class="audio-grid">
-      <!-- REPLACE audio URLs -->
-      <div class="audio-item">
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-        <h4>Indian Sitar</h4>
-        <audio controls>
-          <source src="demo_sitar.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <!-- ... [more demo items as needed] ... -->
-    </div>
-  </div>
-</section>
-<section id="buy" class="section center">
-  <div class="container">
-    <h2>Get the Pack</h2>
-    <p>Pay securely and receive instant access to the .USR pack for use in all your worship sets.</p>
-    <!-- Razorpay CTA re-used -- triggers Checkout.js -->
-    <button class="btn btn-orange buy-section-cta" id="rzp-buy-btn2">Buy Now — ₹499</button>
-    <div class="trust-text" style="margin:15px 0 0 0;">
-      🔒 Secure Razorpay Checkout • ⚡ Instant Download
-    </div>
-    <div class="video-wrapper">
-      <h4 class="video-heading">See the Tones in Action</h4>
-      <p class="video-subheading">Watch the official demo video to hear the quality for yourself.</p>
-      <!-- REPLACE with your own video link -->
-      <iframe src="https://www.youtube.com/embed/3RG6hFmABSc" title="Yamaha PSR-I500 Tone Pack demo video" allowfullscreen loading="lazy" frameborder="0"></iframe>
-    </div>
-  </div>
-</section>
-<section id="features" class="section">
-  <div class="container-2 center">
-    <h2 style="color: white;">Why This Pack?</h2>
-    <p style="color: white;">Less tweaking, more playing. Our tones are crafted to work right out of the box.</p>
-    <div class="grid-3">
-      <article class="feature">
-        <div class="icon"><!-- SVG ICON --></div>
-        <h4>Instant Workflow</h4>
-        <p>Copy .USR file to USB, load, play—no wasted time.</p>
-      </article>
-      <article class="feature">
-        <div class="icon"><!-- SVG ICON --></div>
-        <h4>Worship-Focused</h4>
-        <p>Sits perfectly in the mix, supports vocals, blends with all instruments.</p>
-      </article>
-      <article class="feature">
-        <div class="icon"><!-- SVG ICON --></div>
-        <h4>Stage-Tested</h4>
-        <p>Gain-matched, EQ-ready, live-used.</p>
-      </article>
-    </div>
-  </div>
-</section>
-<section id="faq" class="section faq">
-  <div class="container">
-    <h3 class="center">FAQ</h3>
-    <div class="faq-grid">
-      <details class="faq-card" open>
-        <summary>Will this work on PSR-I500?</summary>
-        <p>Yes, it was built and tested exclusively for Yamaha PSR-I500.</p>
-      </details>
-      <details class="faq-card">
-        <summary>Compatible with other keyboards?</summary>
-        <p>Specific for PSR-I500 format; other models not guaranteed.</p>
-      </details>
-      <details class="faq-card">
-        <summary>Commercial use allowed?</summary>
-        <p>Licensed for live and personal use. For commercial licenses, contact <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
-      </details>
-      <details class="faq-card">
-        <summary>How do I load the .USR file?</summary>
-        <p>Copy to USB &rarr; insert in keyboard &rarr; load via Utility menu. Step-by-step guide included with download.</p>
-      </details>
-      <details class="faq-card">
-        <summary>Refund policy?</summary>
-        <p>Due to digital delivery, refunds aren't offered; but dedicated support is available.</p>
-      </details>
-      <details class="faq-card">
-        <summary>Need support?</summary>
-        <p>Reach out at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> anytime.</p>
-      </details>
-    </div>
-  </div>
-</section>
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width:400px;margin:0 auto;">
-      <input type="hidden" name="form-name" value="contact" />
-      <div style="display:none;">
-        <label>Don't fill this out:<input name="bot-field"></label>
-      </div>
-      <p><label>Name:<br><input type="text" name="name" required></label></p>
-      <p><label>Email:<br><input type="email" name="email" required></label></p>
-      <p><label>Message:<br><textarea name="message" required></textarea></label></p>
-      <p><button type="submit" class="btn btn-orange">Send</button></p>
-    </form>
-    <p style="font-size:13px;color:#888;">Email never shared. For direct support: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
-  </div>
-</section>
+    </section>
+    <section id="audio-previews" class="audio-section">
+        <div class="container-2">
+            <h2 style="color: white;">Audio Previews</h2>
+            <p style="color: white;">Listen to selections from the actual pack. Click 'Compare' to hear the difference.</p>
+            <div class="audio-grid">
+                <div class="audio-item">
+                    <h4>Indian Sitar</h4>
+                    <audio controls>
+                        <source src="demo_sitar.mp3" type="audio/mpeg">
+                    </audio>
+                    <div style="margin-top:10px;">
+                        <button class="audio-toggle-btn" data-default="yamaha_sitar_default.mp3" data-custom="demo_sitar.mp3">
+                            Compare
+                        </button>
+                    </div>
+                </div>
+                <div class="audio-item">
+                    <h4>Indian Flute</h4>
+                    <audio controls>
+                        <source src="demo_flute.mp3" type="audio/mpeg">
+                    </audio>
+                    <div style="margin-top:10px;">
+                        <button class="audio-toggle-btn" data-default="yamaha_flute_default.mp3" data-custom="demo_flute.mp3">
+                            Compare
+                        </button>
+                    </div>
+                </div>
+                <div class="audio-item">
+                    <h4>Worship Pad</h4>
+                    <audio controls>
+                        <source src="demo_pad.mp3" type="audio/mpeg">
+                    </audio>
+                    <div style="margin-top:10px;">
+                        <button class="audio-toggle-btn" data-default="yamaha_pad_default.mp3" data-custom="demo_pad.mp3">
+                            Compare
+                        </button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section id="showcase" class="section center">
+        <div class="container">
+            <h2>The Tones in Action!</h2>
+            <p>See and hear our happy customers using the pack in their own music. <a href="mailto:youremail@domain.com" style="font-weight:600; color:var(--dark-navy);">Submit your video!</a></p>
+            <div class="grid-3" style="margin-top:40px;">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    <p style="font-weight:600; margin-top:15px;">"This pack is a game-changer!" - Mark from Texas</p>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    <p style="font-weight:600; margin-top:15px;">"Perfect for live gigs." - Sarah K.</p>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                    <p style="font-weight:600; margin-top:15px;">"The Indian instruments are so authentic." - Raj P.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buy" class="section center">
+        <div class="container">
+            <h2>Get the Pack</h2>
+            <p>Pay securely and receive instant access to the .USR pack for use in all your worship sets.</p>
+            <button class="btn btn-orange buy-section-cta" id="rzp-buy-btn2">Buy Now — ₹499</button>
+            <div class="trust-text" style="margin:15px 0 0 0;">
+                🔒 Secure Razorpay Checkout • ⚡ Instant Download
+            </div>
+            <div class="video-wrapper">
+                <h4 class="video-heading">See the Tones in Action</h4>
+                <p class="video-subheading">Watch the official demo video to hear the quality for yourself.</p>
+                <iframe src="https://www.youtube.com/embed/3RG6hFmABSc" title="Yamaha PSR-I500 Tone Pack demo video" allowfullscreen loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="section">
+        <div class="container-2 center">
+            <h2 style="color: white;">Why This Pack?</h2>
+            <p style="color: white;">Less tweaking, more playing. Our tones are crafted to work right out of the box.</p>
+            <div class="grid-3">
+                <article class="feature">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h4>Instant Workflow</h4>
+                    <p>Copy .USR file to USB, load, play—no wasted time.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-music"><path d="M9 18V5l12-2V12M9 18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3l4-2z"></path><path d="M21 12V22a2 2 0 0 1-2 2H17a2 2 0 0 1-2-2v-1l4-2z"></path></svg>
+                    </div>
+                    <h4>Worship-Focused</h4>
+                    <p>Sits perfectly in the mix, supports vocals, blends with all instruments.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h4>Stage-Tested</h4>
+                    <p>Gain-matched, EQ-ready, live-used.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h3 class="center">FAQ</h3>
+            <div class="faq-grid">
+                <details class="faq-card" open>
+                    <summary>Will this work on PSR-I500?</summary>
+                    <p>Yes, it was built and tested exclusively for Yamaha PSR-I500.</p>
+                </details>
+                <details class="faq-card">
+                    <summary>Compatible with other keyboards?</summary>
+                    <p>Specific for PSR-I500 format; other models not guaranteed.</p>
+                </details>
+                <details class="faq-card">
+                    <summary>Commercial use allowed?</summary>
+                    <p>Licensed for live and personal use. For commercial licenses, contact <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+                </details>
+                <details class="faq-card">
+                    <summary>How do I load the .USR file?</summary>
+                    <p>Copy to USB &rarr; insert in keyboard &rarr; load via Utility menu. Step-by-step guide included with download.</p>
+                </details>
+                <details class="faq-card">
+                    <summary>Refund policy?</summary>
+                    <p>Due to digital delivery, refunds aren't offered; but dedicated support is available.</p>
+                </details>
+                <details class="faq-card">
+                    <summary>Need support?</summary>
+                    <p>Reach out at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> anytime.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width:400px;margin:0 auto;">
+                <input type="hidden" name="form-name" value="contact" />
+                <div style="display:none;">
+                    <label>Don't fill this out:<input name="bot-field"></label>
+                </div>
+                <p><label>Name:<br><input type="text" name="name" required></label></p>
+                <p><label>Email:<br><input type="email" name="email" required></label></p>
+                <p><label>Message:<br><textarea name="message" required></textarea></label></p>
+                <p><button type="submit" class="btn btn-orange">Send</button></p>
+            </form>
+            <p style="font-size:13px;color:#888;">Email never shared. For direct support: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        </div>
+    </section>
 </main>
 <footer class="footer">
-  <div class="container">
-    <div class="brand-footer">PSR-I500 Tones</div>
-    <div class="footer-nav">
-      <a href="#features">Why Buy</a>
-      <a href="#audio-previews">Audio Previews</a>
-      <a href="#buy">Get the Pack</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact Us</a>
+    <div class="container">
+        <div class="brand-footer">PSR-I500 Tones</div>
+        <div class="footer-nav">
+            <a href="#features">Why Buy</a>
+            <a href="#audio-previews">Audio Previews</a>
+            <a href="#buy">Get the Pack</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div>© <span id="yr"></span> Yamaha PSR-I500 Tones • All Rights Reserved.</div>
+        <p style="color: var(--secondary-accent);font-size:13px;margin-top:10px;">Website not affiliated with Yamaha Corporation.</p>
     </div>
-    <div>© <span id="yr"></span> Yamaha PSR-I500 Tones • All Rights Reserved.</div>
-    <p style="color: var(--secondary-accent);font-size:13px;margin-top:10px;">Website not affiliated with Yamaha Corporation.</p>
-  </div>
 </footer>
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // Razorpay Checkout Integration, triggers on Buy button click
-  function showThankYou() {
-    // Hide buy buttons, show thank-you block
-    document.getElementById('thank-you-block').style.display = 'block';
-    window.scrollTo(0, document.getElementById('thank-you-block').offsetTop);
-  }
-  var options = {
-    "key": "rzp_test_RDPz9OtHoiwOlX", // Replace with your Razorpay Key ID
-    "amount": "49900", // Amount in paise: ₹499 x 100
-    "currency": "INR",
-    "name": "PSR-I500 Tones",
-    "description": "Premium .USR Pack",
-    "image": "cover.png", // REPLACE with your logo/image
-    // You can use Razorpay's Order API for more secure flows
-    // "order_id": "ORDER_ID_FROM_SERVER", // If using Razorpay Orders
-    "handler": function (response){
-      // This function runs after payment is successful
-      showThankYou();
-    },
-    "prefill": {
-      "name": "",
-      "email": "",
-      "contact": ""
-    },
-    "notes": {
-      "pack": "Yamaha PSR-I500 Tones"
-    },
-    "theme": {
-      "color": "#F37D1A"
+<script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Countdown Timer Logic
+    function startCountdown(duration, display) {
+        var timer = duration, minutes, seconds;
+        var countdownInterval = setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
     }
-  };
-  var rzp1 = new Razorpay(options);
-  document.getElementById('rzp-buy-btn').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-  }
-  document.getElementById('rzp-buy-btn2').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-  }
+
+    window.onload = function () {
+        var twoHours = 60 * 60 * 2;
+        var display = document.querySelector('#countdown-timer');
+        if(display) {
+            document.getElementById('countdown-banner').style.display = 'block';
+            startCountdown(twoHours, display);
+        }
+    };
+
+    // Enhanced Audio Previews (Compare button)
+    document.querySelectorAll('.audio-toggle-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const audioPlayer = this.parentElement.previousElementSibling;
+            const currentSrc = audioPlayer.querySelector('source').src;
+            const defaultSrc = this.dataset.default;
+            const customSrc = this.dataset.custom;
+
+            if (currentSrc.includes(customSrc)) {
+                audioPlayer.querySelector('source').src = defaultSrc;
+                audioPlayer.load();
+                this.textContent = 'Listen to Our Custom Tone';
+            } else {
+                audioPlayer.querySelector('source').src = customSrc;
+                audioPlayer.load();
+                this.textContent = 'Listen to Default Yamaha Tone';
+            }
+        });
+    });
+
+    // Razorpay Checkout Integration
+    var options = {
+        "key": "rzp_test_RDPz9OtHoiwOlX",
+        "amount": "49900",
+        "currency": "INR",
+        "name": "PSR-I500 Tones",
+        "description": "Premium .USR Pack",
+        "image": "cover.png",
+        "handler": function (response){
+            window.location.href = 'thank-you.html';
+        },
+        "prefill": {
+            "name": "",
+            "email": "",
+            "contact": ""
+        },
+        "notes": {
+            "pack": "Yamaha PSR-I500 Tones"
+        },
+        "theme": {
+            "color": "#F37D1A"
+        }
+    };
+    var rzp1 = new Razorpay(options);
+    document.getElementById('rzp-buy-btn').onclick = function(e){
+        rzp1.open();
+        e.preventDefault();
+    }
+    document.getElementById('rzp-buy-btn2').onclick = function(e){
+        rzp1.open();
+        e.preventDefault();
+    }
 </script>
 </body>
-
 </html>
-
